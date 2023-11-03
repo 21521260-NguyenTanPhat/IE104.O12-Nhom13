@@ -1,0 +1,602 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
+:root {
+    --main-color: #3F72AF;
+    --font-base: 'civil-regular', sans-serif;
+    --font-base-bold: 'civil-bold', sans-serif;
+    --font-base-medium: 'civil-medium', sans-serif;
+    --hover: #3F72AF;
+    --text-color: #333333;
+    --price: #3F72AF;
+    --hover: #3F72AF;
+    --menu: #ff8ea6;
+}
+*,::after,::before {
+    box-sizing: border-box
+}
+/* _________________________________________________________________ */
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scroll;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff
+}
+
+body,html {
+    padding: 0 !important;
+    padding: 0;
+    margin: 0
+}
+@-ms-viewport {
+    width: device-width
+}
+/* _________________________________________________________________ */
+
+
+
+
+figure, nav{
+    display: block;
+}
+
+figure {
+    margin: 0 0 1rem
+}
+/* _________________________________________________________________ */
+
+
+h3{
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none outside
+}
+
+strong {
+    font-weight: bolder
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none
+}
+
+a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover {
+    color: inherit;
+    text-decoration: none
+}
+
+a:not([href]):not([tabindex]):focus {
+    outline: 0
+}
+
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    page-break-inside: avoid
+}
+
+
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.breadcrumb {
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    overflow: hidden
+    
+    
+}
+.breadcrumb {
+    font-family: var(--font-base);
+    margin: 0 0 15px;
+    font-size: 14px;
+    padding: 0px;
+    border-radius: 0;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: transparent;
+    width: 100%;
+    float: left;
+    text-align: left;
+    display: block;
+    margin: 0
+}
+.container> ul{
+    background: url(./Img/bg-breadcrumb.jpg);
+}
+.breadcrumb li {
+    display: inline
+}
+
+.breadcrumb li>a {
+    color: var(--text-color);
+    font-family: var(--font-base)
+}
+
+.breadcrumb li>a>span {
+    color: var(--text-color)
+}
+
+.breadcrumb li span {
+    display: inline;
+    color: var(--hover);
+    font-family: var(--font-base)
+}
+/* ______________________________________________________________ */
+
+
+.banner-col {
+    padding: 20px 0 30px
+}
+
+@media (max-width: 991px) {
+    .banner-col {
+        padding:15px 0 20px
+    }
+}
+
+.wrap-srt-title {
+    display: flex;
+    justify-content: space-between
+}
+
+@media (max-width: 767px) {
+    .wrap-srt-title {
+        flex-flow:column
+    }
+}
+
+
+
+ h3,p {
+    orphans: 3;
+    widows: 3
+}
+
+ h3 {
+    page-break-after: avoid
+}
+
+@page {
+    size: a3
+}
+
+body {
+    min-width: 992px !important
+}
+
+.container {
+    min-width: 992px !important
+}
+
+
+
+
+/* CSS PHẦN SORT THEO GIÁ______________________________________________________________ */
+
+
+
+.sortby{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    height: 60px;
+    align-items: center;
+    background: #F5F5F5;
+    margin-bottom: 40px;
+    padding: 0 15px
+}
+
+.sortby .sort-icon {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: left center;
+    padding-left: 15px
+}
+
+@media (min-width: 768px) {
+    .sortby .sort-icon span {
+        display:none
+    }
+}
+
+.sortby span,.sortby ul li a {
+    font-family: var(--font-base);
+    font-size: 14px;
+    color: #2E3A59;
+    height: 32px;
+    line-height: 32px
+}
+
+.sortby ul {
+    padding: 0;
+    margin: 0 0 0 5px
+}
+
+.sortby ul li {
+    display: inline-flex;
+    padding: 0 10px;
+    background: #fff;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-left: 10px
+}
+
+.sortby ul li.active,.sortby ul li:hover {
+    background: #3F72AF
+}
+
+.sortby ul li.active a,.sortby ul li:hover a {
+    color: #fff
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .sortby {
+        justify-content:flex-start
+    }
+}
+
+@media (max-width: 767px) {
+    .sortby {
+        justify-content:flex-start;
+        height: 40px
+    }
+
+    .sortby .sort-icon span {
+        color: var(--hover)
+    }
+
+    .sortby ul {
+        position: absolute;
+        width: 210px;
+        background: #fff;
+        display: none;
+        flex-flow: column;
+        border: solid 1px #ebebeb;
+        top: 40px;
+        z-index: 99
+    }
+
+    .sortby ul li {
+        margin: 0
+    }
+
+    
+}
+/* HẾT CSS PHẦN SORT THEO GIÁ______________________________________________________________ */
+
+
+/* CSS PHẦN LIST SÁCH______________________________________________________________ */
+.thumb {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 0 10px;
+    /* padding: 5px 0 71px; */
+    /* height: 232px */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thumb .image_thumb {
+    
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    height: 245px
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .thumb .image_thumb {
+        height:210px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .thumb .image_thumb {
+        height:210px
+    }
+}
+
+@media (max-width: 425px) {
+    .thumb .image_thumb {
+        height:160px
+    }
+}
+
+.thumb .image_thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s
+}
+
+.thumb .image_thumb img.loaded:not(.large) {
+    min-height: unset;
+    width: auto !important;
+    height: unset !important
+}
+
+.thumb h3 {
+    font-family: var(--font-base-bold);
+    overflow: hidden;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 0 5px;
+    margin: 0;
+    text-align: center;
+    max-height: 50px
+}
+
+
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+.thumb h3 a {
+    color: var(--text-color)
+}
+
+.thumb h3 a:hover {
+    color: var(--hover)
+}
+
+.thumb h3:hover {
+    color: var(--hover)
+}
+
+
+.thumb .price-box {
+    color: var(--price);
+    line-height: 24px;
+    display: block;
+    font-size: 18px;
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: var(--font-base-bold);
+    text-align: center
+}
+
+@media (max-width: 991px) {
+    .thumb .price-box {
+        font-size:small !important;
+        padding-right: 0
+    }
+
+    .thumb.info-product {
+        padding: 0 10px
+
+        
+    }
+}
+
+
+
+/* CSS PHẦN CHUYỂN TRANG-------------------------------------*/
+
+
+.pagenav {
+    text-align: center;
+    padding: 10px 0 30px 0
+}
+
+.pagenav span {
+    display: inline-block;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.pagenav ul {
+    padding: 0;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.pagenav ul li {
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    line-height: 22px;
+    background: #fff;
+    border: solid 1px transparent;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px
+}
+
+.pagenav ul li.active,.pagenav ul li:hover {
+    border-color: var(--hover)
+}
+
+.pagenav ul li.active a,.pagenav ul li:hover a {
+    color: var(--hover)
+}
+
+.pagenav ul li.active svg,.pagenav ul li:hover svg {
+    fill: var(--hover)
+}
+
+.pagenav ul li a {
+    display: block;
+    line-height: 8px
+}
+
+
+  /*HẾT CSS PHẦN CHUYỂN TRANG -------------------------------------*/
+ 
+
+/* CSS PHẦN FILTER THEO QUỐC GIA------------------------------------*/
+   
+    
+    .aside-item {
+        display: flex;
+        float:  left;
+        flex-flow: column;
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+    .aside-item h2 {
+        font-family: var(--font-base-bold);
+        text-transform: none;
+        font-size: 20px;
+        color: var(--main-color);
+        margin-bottom: 20px;
+        display: block;
+        padding-top: 0
+    }
+    
+    .aside-item .aside-title {
+        position: relative
+    }
+    
+    .aside-item .aside-content {
+        border-radius: 0px
+    }
+    
+    .aside-item .aside-content ul {
+        padding-left: 0px;
+        max-height: 400px;
+        overflow: hidden;
+        overflow-y: auto
+    }
+    
+   
+    .aside-item .aside-content {
+        position: relative;
+        padding-top: 0
+    }
+    
+    .aside-item.active .aside-content {
+        display: block
+    }
+    
+/* HẾT CSS PHẦN FILTER THEO QUỐC GIA------------------------------------*/
+    
