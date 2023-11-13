@@ -35,33 +35,43 @@
       </div>
     </header>
     <!-- header ends -->
-    <div>
-      <h1>Thông tin Thanh Toán </h1>
-      <div class="form-group">
-        <label for="name">Tên</label>
-        <div class="input-group">
-          <input type="text" name="name" id="name" class="form-control">
-        </div>
+    <div class="wrapper">
+      <div class=" form-box information">
+        <h2>Thông tin Thanh Toán </h2>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" required>
+            <label>Ho Va Ten</label>
+          </div>
+          <div class="input-box">
+            <input type="date" required>
+            <label>NgayThangNamSinh</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required>
+            <label>DiaChi</label>
+          </div>
+          <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required>
+            <label>PhoneNumber</label>
+          </div>
+          <div class="input-box">
+            <output type="text">
+            <label>MaSach</label>
+          </div>
+          <div class="input-box">
+            <input type="number" required>
+            <label>Soluong</label>
+          </div>
+          <div>
+            <button type="submit" class="btn">Finish</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <div class="input-group">
-          <input type="email" name="email" id="email" class="form-control">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="phone">Số điện thoại</label>
-        <div class="input-group">
-          <input type="text" name="phone" id="phone" class="form-control">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="address">Địa chỉ</label>
-        <div class="input-group">
-          <input type="text" name="address" id="address" class="form-control">
-        </div>
-      </div>
-      <input type="submit" value="Gửi">
     </div>
     <!-- bottom navbar -->
     <nav class="bottom-navbar">
