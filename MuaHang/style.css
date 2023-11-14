@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Source+Code+Pro&display=swap');
 
+
+
 :root{
     --blue: #3F72AF;
     --dark-color: #112D4E;
@@ -264,6 +266,65 @@ html::-webkit-scrollbar-thumb{
     box-shadow: var(--box-shadow);
 }
 
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    backdrop-filter:blur(20px) ;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+.wrapper .information {
+    width: 100%;
+    padding: 40px;
+}
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top : 50%;
+    left :5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top :-5px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
 .strengths-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -426,57 +487,7 @@ html::-webkit-scrollbar-thumb{
 h1{
     text-align: center;
 }
-.wrapper{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    background: transparent;
-    border: 2px solid rgba(255,255,255,.5);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    backdrop-filter:blur(20px) ;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-}
-.wrapper .information {
-    width: 100%;
-    padding: 40px;
-}
-.form-box h2 {
-    font-size: 2em;
-    color: #162938;
-    text-align: center;
-}
-.input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #162938;
-    margin: 30px 0;
-}
-.input-box label{
-    position: absolute;
-    top : 50%;
-    left :5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
-}
-.input-box input:focus~label,
-.input-box input:valid~label{
-    top :-5px;
-}
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-weight: 600;
-}
+
 
 
 
