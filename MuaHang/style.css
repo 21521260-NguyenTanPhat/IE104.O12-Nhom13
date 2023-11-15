@@ -276,13 +276,14 @@ html::-webkit-scrollbar-thumb{
     position: relative;
     width: 400px;
     height: 700px;
+    top: 70px;
     background: transparent;
     border: 2px solid rgba(255,255,255,.5);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center ;
-    backdrop-filter:blur(20px) ;
+    backdrop-filter: blur(20px) ;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 }
 .wrapper .information {
@@ -304,11 +305,11 @@ html::-webkit-scrollbar-thumb{
 .input-box label{
     position: absolute;
     top : 50%;
-    left :5px;
+    left :2px;
     transform: translateY(-50%);
-    font-size: 1em;
+    font-size: 1.5em;
     color: #162938;
-    font-weight: 500;
+    font-weight: 400;
     pointer-events: none;
 }
 
