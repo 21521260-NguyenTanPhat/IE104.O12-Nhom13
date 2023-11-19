@@ -111,11 +111,13 @@ section {
     color: var(--blue);
 }
 
-.header .middle-section .navbar{
-    text-align: center;
+
+
+.menu, .submenu, .submenu2 {
+    list-style-type: none;
 }
 
-.header .middle-section .navbar a{
+ .navbar a{
     color: var(--black);
     font-weight: bold;
     display: inline-block;
@@ -123,43 +125,79 @@ section {
     font-size: 1.7rem;
 }
 
-.header .middle-section .navbar a:hover{
+.navbar a:hover{
     color: var(--blue);
 }
 
-.header .middle-section .dropdown {
+.navbar .menu {
+    text-align: justify;
+    height: 40px;
+    line-height: 40px;
+}
+
+.navbar .menu>li {
     position: relative;
-    display: inline-block;
+    width: 150px;
+    float: left;
 }
 
-.header .middle-section .dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--lightblue);
-    min-width: 20rem;
-    text-align: left;
-    border: var(--border);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.header .middle-section .dropdown .dropdown-content a{
+.navbar .menu>li:hover .submenu {
     display: block;
-    color: var(--blue);
 }
 
-.header .middle-section .dropdown .dropdown-content a:hover{
+.navbar .submenu {
+    background-color: var(--lightblue);
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, .6);
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100%; /* Adjusted positioning to be below the parent menu */
+    z-index: 9999;
+    min-width: 20rem;
+}
+
+.navbar .submenu a:hover{
     background-color: var(--blue);
     color: white;
 }
 
-.header .middle-section .dropdown:hover .dropdown-content {
+.navbar .submenu a{
+    display: block;
+    color: var(--blue);
+}
+
+
+
+.navbar .submenu:hover {
     display: block;
 }
 
-.header .middle-section .navbar .navtool:hover{
-    background: var(--dark-color);
+.navbar .submenu>li {
+    position: relative;
 }
+
+.navbar .submenu>li:hover .submenu2 {
+    display: block;
+}
+
+.navbar .submenu2 {
+    background-color: var(--lightblue);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .6);
+    display: none;
+    left: 100%; /* Adjusted positioning to the right of the parent submenu */
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+    min-width: 22rem;
+}
+
+.navbar .submenu2:hover {
+    display: block;
+}
+
+
+
+
 
 .header .right-section{
     padding: 1.2rem;
